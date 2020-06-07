@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>四則計算ドリル - レベル３</title>
+
+    <script
+      src="https://kit.fontawesome.com/c91212125d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <!-- ここはヘッダー -->
+    <header>
+      <div class="wrapper">
+        <div class="header">
+          <a class="slide" href="../division.html"> </a>
+          <h1><i class="fas fa-calculator"></i> 四則演算ドリル</h1>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="display">
+        <div class="title">
+          <h1>
+            <span id="drill-genre">割り算ドリル</span>
+            <br />
+            <span id="drill-level">レベル３</span>
+          </h1>
+        </div>
+        <div class="display-inside">
+          <form name="f">
+            <!-- ここはスタート初期画面 -->
+            <div class="section-wrapper">
+              <div class="section-front" id="front">
+                <p>この問題は</p>
+                <p>
+                  <span id="drill-levl-content">まとめ</span
+                  >問題です
+                </p>
+                <p>全部で10問あります</p>
+              </div>
+              <!-- ここからは問題画面 -->
+              <div class="section-strat hide" id="start">
+                <h2><span id="cn"></span>問目</h2>
+                <p>
+                  <span id="question-number1"></span>÷<span
+                    id="question-number2"
+                  ></span
+                  >=<input
+                    id="answer-input"
+                    type="number"
+                    name="inputnumber"
+                    autofocus="true"
+                    autocomplete="off"
+                    inputmode="numeric"
+                  />
+                </p>
+                <p id="correct-box" class="correct-answer"></p>
+              </div>
+              <!-- ここからは回答結果画面 -->
+              <div class="section-end hide" id="end">
+                <h2>今回のスコア</h2>
+                <p id="userScore"></p>
+                <p id="congrats" class="hide">全問正解<br />おめでとう!</p>
+              </div>
+            </div>
+            <!-- <input id="btn" value="START!" type="button"> -->
+            <input
+              class="start-btn btn"
+              type="button"
+              id="btnS"
+              value="START!"
+              name="btn"
+            />
+            <input
+              class="next-btn btn hide"
+              type="button"
+              id="btnN"
+              value="NEXT!"
+              name="btn"
+            />
+            <input
+              class="decision-btn btn hide"
+              type="button"
+              id="btnD"
+              value="決　定"
+              name="btn"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
