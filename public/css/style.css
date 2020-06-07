@@ -1,0 +1,176 @@
+body{
+  background: #FBE9D6;
+  margin: 0;
+  padding: 0;
+  color: #312114;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+  letter-spacing: 1.8px;
+  user-select: none
+}
+.wrapper{
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ここからヘッダー */
+
+header{
+  background: #CD853F;
+  height: 70px;
+}
+.header{
+  height: 70px;
+  display: flex;
+  position: relative;
+}
+.header::before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f104";
+  font-weight: 900;
+  font-size: 40px;
+  display: inline;
+  position: absolute;
+  top: 15px;
+  cursor: pointer;
+  
+}
+.header > h1{
+  margin: 0 auto;
+  line-height: 70px;
+  color: #FBE9D6; 
+  font-weight: normal;
+  font-size: 25px;
+  position: relative;
+  left: -15px;
+}
+/* ここはボタンのスタイル */
+.btn{
+  color: #FBE9D6;
+  margin: 10px auto;
+  background: #F08F00;
+  display: block;
+  width: 160px;
+  height: 50px;
+  border-radius: 5px;
+  line-height: 50px;
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0px 4px rgb(201, 122, 2);
+  cursor: pointer;
+  border: none;
+  outline: 0;
+}
+.btn:active{
+  position: relative;
+  top: 4px;
+  box-shadow: none;
+}
+
+/* ここからドリル画面枠線外 */
+
+.title{
+  height: 100px;
+}
+.title > h1{
+  font-size: 27px;
+  text-align: center;
+}
+
+/* ここからドリル画面枠線内 */
+
+/* ---画面のフレーム--- */
+.display-inside{
+  border: 5px solid #4D4136;
+  border-radius: 5px;
+  padding: 10px 10px;
+  height: 300px;
+}
+.section-wrapper{
+  height: 230px;
+}
+/* ---画面フレーム--- */
+
+/* スタート画面 */
+.section-front p{
+  text-align: center;
+  font-size: 24px;
+  margin: 0px auto 20px;
+}
+
+/*-------- 解答中画面 -------*/
+.section-strat h2{
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+}
+.section-strat p{
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 10px;
+  margin: 15px auto;
+}
+#answer-input{
+  font-size: 28px;
+  padding: 10px;
+  border-radius: 5px;
+  /* height: 50px; */
+  width: 60px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#correct-box{
+  margin: 20px auto 0;
+  letter-spacing: 5px;
+  font-size: 25px;
+}
+/* 正答時のスタイル */
+.correct-answer{
+  color: #E85A70;
+}
+/* 誤答時のスタイル */
+.incorrect-answer{
+  color: #4EA1D5;
+
+}
+/*-------- 解答結果画面 --------*/
+.section-end{
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+.section-end h2{
+  margin: 0px auto;
+}
+.section-end p{
+  font-weight: bold;
+  margin: 10px;
+  font-size: 30px;
+}
+#congrats{
+  color: #E85A70;
+  font-size: 22px;
+  margin: 0;
+}
+
+
+
+
+.hide{
+  display:  none;
+}
+.btn.hide{
+  display:  none;
+}
+.slide{
+  width: 30px;
+  height: 70px;
+  /* line-height: 70px; */
+  font-size: 1.5rem;
+  text-decoration: none;
+  z-index: 1;
+}

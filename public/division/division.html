@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>四則計算ドリル - 割り算</title>
+
+    <script
+      src="https://kit.fontawesome.com/c91212125d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/styleMain.css" />
+    <style>
+      .header::before{
+        font-family: "Font Awesome 5 Free";
+        content: "\f104";
+        font-weight: 900;
+        font-size: 40px;
+        display: inline;
+        position: absolute;
+        top: 15px;
+        cursor: pointer;
+
+      }
+      .header > h1{
+        position: relative;
+        left: -15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ここはヘッダー -->
+    <header>
+      <div class="wrapper">
+        <div class="header">
+          <a class="slide" href="../index.html"> </a>
+          <h1><i class="fas fa-calculator"></i> 四則演算ドリル</h1>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="display">
+        <div class="title">
+          <h1>
+            <span id="drill-genre">割り算ドリル</span>
+            <br />
+            <span id="drill-level">レベル選択</span>
+          </h1>
+        </div>
+        <div class="display-inside">
+          <form name="f">
+            <!-- ここはスタート初期画面 -->
+            <div class="section-wrapper">
+              <div class="section-front top" id="front">
+                <!-- <a class="btn">レベル１</a> -->
+                <a href="level1/level1.html" class="btn">レベル１</a>
+                <p>一桁で割る問題</p>
+                <!-- <a class="btn">レベル２</a> -->
+                <a href="level2/level2.html" class="btn">レベル２</a>
+                <p>二桁で割る問題</p>
+                <!-- <a class="btn">レベル３</a> -->
+                <a href="level3/level3.html" class="btn">レベル３</a>
+                <p>まとめ問題</p>
+              </div> 
+            </div> 
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="js/main.js"></script> -->
+  </body>
+</html>
